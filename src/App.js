@@ -5,7 +5,7 @@ import Users from './containers/Users';
 
 import asyncComponent from './hoc/asyncComponent';
 
-const AsyncPizza = assyncComponent(() => {
+const AsyncPizza = asyncComponent(() => {
   return import('./containers/Pizza');
 });
 
@@ -25,3 +25,5 @@ class App extends Component {
     );
   }
 }
+
+export default App;
